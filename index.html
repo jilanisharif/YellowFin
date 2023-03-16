@@ -35,10 +35,14 @@
     <script src="../c.evidon.com/dg/dg.js" companyId="7877"></script>
     <script type=”text/javascript” src=../cdn.timetrade.com/scripts/lightbox/latest/lightbox.js></script>
     <script type="text/javascript">
+        var url = new URL(window.location.href);
+        var userId = url.searchParams.get("userId")
         window.ymConfig = {
             "bot": "x1676621486485",
             "host": "https://r4.cloud.yellow.ai",
-            "payload": {}
+            "payload": {
+                "userId": userId
+            }
         };
         (function() {
             var w = window,
