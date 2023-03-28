@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from gliafinancial.com/insurance.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 08:16:31 GMT -->
-  <!-- Added by HTTrack -->
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <!-- /Added by HTTrack -->
 
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta
-      name="description"
-      content="Borrow - is the loan company, Business Website Template."
-    />
     <meta
       name="keywords"
-      content="Financial Website Template, Bootstrap Template, Loan Product, Personal Loan, "
+      content="YellowFin Website Template,Loan Product, Personal Loan, "
     />
-    <title>Cortex Financial Demo</title>
+    <title>YellowFin</title>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/update-styles.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/fontello.css" rel="stylesheet" />
+
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CMerriweather:300,300i,400,400i,700,700i"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i"
       rel="stylesheet"
     />
+
     <!-- owl Carousel Css -->
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/owl.theme.css" rel="stylesheet" />
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Second CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/swiper-bundle.minc9d1.css?v=1659620664"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mainef8f.css?v=1675434714"
+    />
+
     <script type="text/javascript">
+      var url = new URL(window.location.href);
+      var userId = url.searchParams.get("userId");
       window.ymConfig = {
         bot: "x1676621486485",
         host: "https://r4.cloud.yellow.ai",
-        payload: {},
+        payload: {
+          userId: userId,
+        },
       };
       (function () {
         var w = window,
@@ -73,8 +86,9 @@
     </script>
   </head>
 
-  <body onload="pageType(), loggingToggle()">
+  <body>
     <!-- /.top-bar -->
+
     <div class="header-2">
       <div class="container">
         <div class="row">
@@ -84,9 +98,9 @@
             <!-- logo -->
             <div class="logo">
               <img
-                src="images/yellowFin.png"
-                style="width: auto; height: 50px; margin-left: 0px"
-                alt="Cortex - Insurance Company Website Template"
+                src="images/YellowFin.png"
+                style="width: auto; height: 50px; margin-left: 20px"
+                alt="YellowFin - Insurance Company Website Template"
               />
             </div>
             <div class="login-section"></div>
@@ -101,10 +115,7 @@
                 <!-- navigation start-->
                 <ul id="menu-options">
                   <li class="active">
-                    <a
-                      href="index.html"
-                      title="Home page 3"
-                      class="animsition-link"
+                    <a href="index.html" title="Home" class="animsition-link"
                       >Home</a
                     >
                   </li>
@@ -114,15 +125,15 @@
                     id="cuButton"
                   >
                     <a
-                      href="credit-unions.html"
-                      title="Credit Union Home"
+                      href="banking-new.html"
+                      title="Banking"
                       class="animsition-link"
                       >Banking</a
                     >
                     <ul id="cuDrop">
                       <li>
                         <a
-                          href="cu-checking-accounts.html"
+                          href="banking-new.html"
                           title="Banking Overview"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -132,7 +143,7 @@
                       </li>
                       <li>
                         <a
-                          href="cu-checking-accounts.html"
+                          href="checking-accounts.html"
                           title="Accounts"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -142,7 +153,7 @@
                       </li>
                       <li>
                         <a
-                          href="cu-credit-cards.html"
+                          href="credit-cards.html"
                           title="Credit Cards"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -152,7 +163,7 @@
                       </li>
                       <li>
                         <a
-                          href="cu-credit-cards.html"
+                          href="credit-cards.html"
                           title="Debit"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -168,15 +179,15 @@
                     id="bankingButton"
                   >
                     <a
-                      href="banking.html"
-                      title="Banking Home"
+                      href="mortgages.html"
+                      title="Borrow"
                       class="animsition-link"
                       >Borrow</a
                     >
                     <ul id="bankingDrop">
                       <li>
                         <a
-                          href="cu-mortgages.html"
+                          href="mortgages.html"
                           title="Mortgage"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -187,7 +198,7 @@
 
                       <li>
                         <a
-                          href="checking-accounts.html"
+                          href="auto-loans.html"
                           title="Auto Loans"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -197,7 +208,7 @@
                       </li>
                       <li>
                         <a
-                          href="credit-cards.html"
+                          href="debt-consolidation-loans.html"
                           title="Debot Consolidation Loans"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
@@ -207,8 +218,8 @@
                       </li>
                       <li>
                         <a
-                          href="checking-accounts.html"
-                          title="Auto Loans"
+                          href="personal-loans.html"
+                          title="Personal Loans"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
@@ -217,8 +228,8 @@
                       </li>
                       <li>
                         <a
-                          href="checking-accounts.html"
-                          title="Auto Loans"
+                          href="student-loans.html"
+                          title="Student Loans"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
@@ -233,40 +244,40 @@
                     id="bankingButton"
                   >
                     <a
-                      href="banking.html"
-                      title="Banking Home"
+                      href="education-planning.html"
+                      title="Investing"
                       class="animsition-link"
                       >Investing</a
                     >
                     <ul id="investingDrop">
                       <li>
                         <a
-                          href="checking-accounts.html"
-                          title="Credit Cards"
+                          href="education-planning.html"
+                          title="Education Planning"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
-                          >Checking Accounts</a
+                          >Education Planning</a
                         >
                       </li>
                       <li>
                         <a
-                          href="credit-cards.html"
-                          title="Credit Cards"
+                          href="financial-planning.html"
+                          title="Financial Planning"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
-                          >Credit Cards</a
+                          >Financial Planning</a
                         >
                       </li>
                       <li>
                         <a
-                          href="mortgages.html"
-                          title="Mortgage"
+                          href="retirement-planning.html"
+                          title="Retirement Planning"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
-                          >Mortgages &amp; Home Equity</a
+                          >Retirement Planning</a
                         >
                       </li>
                     </ul>
@@ -275,14 +286,17 @@
                     onmouseover="menuHover('insuranceDrop')"
                     onmouseout="menuHoverOut('insuranceDrop')"
                   >
-                    <a href="insurance.html" class="animsition-link"
+                    <a
+                      href="insurance.html"
+                      title="Insurance"
+                      class="animsition-link"
                       >Insurance</a
                     >
                     <ul id="insuranceDrop">
                       <li>
                         <a
                           href="auto-insurance.html"
-                          title="Life Insurance"
+                          title="Auto Insurance"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
@@ -292,7 +306,7 @@
                       <li>
                         <a
                           href="homeowners-insurance.html"
-                          title="Homeowners"
+                          title="Homeowners nsurance"
                           class="animsition-link dropdownLink"
                           onmouseover="optionHover(this)"
                           onmouseout="optionHoverOut(this)"
@@ -328,41 +342,6 @@
                       class="animsition-link"
                       >Contact us</a
                     >
-                  </li>
-                </ul>
-                <ul id="language-list">
-                  <li
-                    onmouseover="menuHover('languageDrop')"
-                    onmouseout="menuHoverOut('languageDrop')"
-                    class="language-selector"
-                  >
-                    <a href="#" title="Language" class="animsition-link"
-                      >Language</a
-                    >
-                    <ul id="languageDrop">
-                      <li>
-                        <a
-                          onclick="toggleSpanish();"
-                          href="#"
-                          title="Spanish"
-                          id="spanishLocale"
-                          class="btn"
-                          onmouseover="optionHover(this)"
-                          onmouseout="optionHoverOut(this)"
-                          >Spanish</a
-                        >
-                        <a
-                          onclick="toggleEnglish();"
-                          href="#"
-                          title="English"
-                          id="englishLocale"
-                          class="btn"
-                          onmouseover="optionHover(this)"
-                          onmouseout="optionHoverOut(this)"
-                          >English</a
-                        >
-                      </li>
-                    </ul>
                   </li>
                 </ul>
               </div>
@@ -694,7 +673,7 @@
         </div>
       </div>
     </div>
-    <!-- /.cta-section -->
+
     <div class="footer section-space100">
       <!-- footer -->
       <div class="container">
@@ -702,58 +681,32 @@
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="widget-text mt40">
-              <!-- widget text -->
               <p>
-                Our goal at Cortex Financial is to provide access to financial
-                products that meet our customer's needs.
+                The main goal is to provide access to financial products that
+                meet our customer's needs.
               </p>
             </div>
-            <!-- /.widget text -->
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="widget-text mt40">
-              <!-- widget text -->
-
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                   <p class="address-text">
-                    <span><i class="icon-placeholder-3 icon-1x"></i> </span>30
-                    West 21st St, New York, NY 10504
+                    <span><i class="icon-placeholder-3 icon-1x"></i> </span>3400
+                    Concar Dr, San Mateo, California
                   </p>
                 </div>
-                <button
-                  class="omnibrowse-code-button btn btn-default"
-                  onclick="document.body.appendChild(document.createElement('sm-visitor-code'))"
-                >
-                  CoBrowse Code
-                </button>
               </div>
             </div>
-            <!-- /.widget text -->
           </div>
         </div>
       </div>
     </div>
-    <!-- /.footer -->
-    <div class="tiny-footer">
-      <!-- tiny footer -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-            <p>© Copyright 2021 | Cortex Financial</p>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
-            <p>Terms of use | Privacy Policy</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.tiny footer -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/menumaker.js"></script>
+
     <!-- sticky header -->
     <script type="text/javascript" src="js/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/sticky-header.js"></script>
@@ -761,22 +714,15 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/slider-carousel.js"></script>
     <script type="text/javascript" src="js/service-carousel.js"></script>
-    <!-- Back to top script -->
-    <script src="js/back-to-top.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).on("mouseenter", '[data-toggle="tab"]', function () {
-        $(this).tab("show");
-      });
-    </script>
-    <!-- SaleMove, This is where the magic happens! -->
-    <script src="../api.salemove.com/salemove_integration.js"></script>
-    <!-- Show Hide Language -->
-    <script type="text/javascript" src="js/language-toggle.js"></script>
-    <!--Close the menu in mobile view when opening languages-->
-    <script type="text/javascript" src="js/mobile-menu.js"></script>
-    <!--Check if it's banking/insurance and logged in/out-->
-    <script type="text/javascript" src="js/login-validation.js"></script>
-  </body>
 
-  <!-- Mirrored from gliafinancial.com/insurance.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 08:16:32 GMT -->
+    <!-- Floating Buttons -->
+    <script
+      src="https://kit.fontawesome.com/b7a058fb42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/floating-button-script.js"
+    ></script>
+  </body>
 </html>

@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from gliafinancial.com/beforetex.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 08:16:36 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<!-- /Added by HTTrack -->
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Borrow - is the loan company, Business Website Template.">
-    <meta name="keywords" content="Financial Website Template, Bootstrap Template, Loan Product, Personal Loan, ">
-    <title>YellowFin Financial Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="YellowFin Website Template,Loan Product, Personal Loan, "
+    />
+    <title>YellowFin</title>
+
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/update-styles.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/update-styles.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fontello.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-    <!-- owl Carousel Css -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <script type="text/javascript">
-        window.ymConfig = {
-            "bot": "x1676621486485",
-            "host": "https://r4.cloud.yellow.ai",
-            "payload": {}
-        };
-        (function() {
-            var w = window,
-                ic = w.YellowMessenger;
-            if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
-            else {
-                var d = document,
-                    i = function() {
-                        i.c(arguments)
-                    };
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
 
-                function l() {
-                    var e = d.createElement("script");
-                    e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
-                    var t = d.getElementsByTagName("script")[0];
-                    t.parentNode.insertBefore(e, t)
-                }
-                i.q = [], i.c = function(e) {
-                    i.q.push(e)
-                }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
-            }
-        })();
+    <!-- owl Carousel Css -->
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.css" rel="stylesheet" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <script type="text/javascript">
+      var url = new URL(window.location.href);
+      var userId = url.searchParams.get("userId");
+      window.ymConfig = {
+        bot: "x1676621486485",
+        host: "https://r4.cloud.yellow.ai",
+        payload: {
+          userId: userId,
+        },
+      };
+      (function () {
+        var w = window,
+          ic = w.YellowMessenger;
+        if ("function" === typeof ic)
+          ic("reattach_activator"), ic("update", ymConfig);
+        else {
+          var d = document,
+            i = function () {
+              i.c(arguments);
+            };
+
+          function l() {
+            var e = d.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js");
+            var t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t);
+          }
+          (i.q = []),
+            (i.c = function (e) {
+              i.q.push(e);
+            }),
+            (w.YellowMessenger = i),
+            w.attachEvent
+              ? w.attachEvent("onload", l)
+              : w.addEventListener("load", l, !1);
+        }
+      })();
     </script>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
+  </head>
 
 <body>
     <!-- /.top-bar -->
@@ -101,12 +116,10 @@
                     </div>
                     <div class="sub-nav" id="sub-nav">
                         <ul class="nav nav-justified">
-                            <li class="nav-item">
+                            <li class="nav-item" id="callback-button">
                                 <a href="#" class="nav-link">Give me call back</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="contact-us.html" class="nav-link">Glia DCS</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -212,85 +225,62 @@
                                 </form>
                                 </div>
                             </div>
-                            <!-- /.section title start-->
                         </div>
-                        <!-- <div class="map" id="googleMap"></div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /.content end -->
 
     <div class="footer section-space100">
         <!-- footer -->
         <div class="container">
-            <hr class="dark-line">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="widget-text mt40">
-                        <!-- widget text -->
-                        <p>Our goal at YellowFin Financial is to provide access to financial products that meet our customer's needs.</p>
-
-                    </div>
-                    <!-- /.widget text -->
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="widget-text mt40">
-                        <!-- widget text -->
-
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                                <p class="address-text"><span><i class="icon-placeholder-3 icon-1x"></i> </span>30 West 21st St, New York, NY 10504 </p>
-                            </div>
-                            <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
-                            </button>
-                        </div>
-                    </div>
-                    <!-- /.widget text -->
-                </div>
+          <hr class="dark-line" />
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="widget-text mt40">
+                <p>
+                  The main goal is to provide access to financial products that
+                  meet our customer's needs.
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- /.footer -->
-    <div class="tiny-footer">
-        <!-- tiny footer -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                    <p>© Copyright 2021 | YellowFin Financial</p>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="widget-text mt40">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p class="address-text">
+                      <span><i class="icon-placeholder-3 icon-1x"></i> </span>3400
+                      Concar Dr, San Mateo, California
+                    </p>
+                  </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
-                    <p>Terms of use | Privacy Policy</p>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- /.tiny footer -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/menumaker.js"></script>
-
-    <!-- sticky header -->
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/sticky-header.js"></script>
-    <!-- slider script -->
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/slider-carousel.js"></script>
-    <script type="text/javascript" src="js/service-carousel.js"></script>
-    <!-- Back to top script -->
-    <script src="js/back-to-top.js" type="text/javascript"></script>
-    <!-- SaleMove, This is where the magic happens! -->
-    <script src="../api.salemove.com/salemove_integration.js"></script>
-    <!-- Show Hide Language -->
-    <script type="text/javascript" src="js/language-toggle.js"></script>
-    <!--Close the menu in mobile view when opening languages-->
-    <script type="text/javascript" src="js/mobile-menu.js"></script>
-</body>
-
-
-<!-- Mirrored from gliafinancial.com/beforetex.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 08:16:36 GMT -->
-
-</html>
+      </div>
+  
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/menumaker.js"></script>
+  
+      <!-- sticky header -->
+      <script type="text/javascript" src="js/jquery.sticky.js"></script>
+      <script type="text/javascript" src="js/sticky-header.js"></script>
+      <!-- slider script -->
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/slider-carousel.js"></script>
+      <script type="text/javascript" src="js/service-carousel.js"></script>
+  
+      <!-- Floating Buttons -->
+      <script
+        src="https://kit.fontawesome.com/b7a058fb42.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./js/floating-button-script.js"
+      ></script>
+    </body>
+  </html>

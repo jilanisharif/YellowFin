@@ -1,60 +1,58 @@
 @charset "utf-8";
 
 /* CSS Document */
-
-
-/*
-
- Template Name : Borrow - A Loan Company Website Template
- Author : Jitu Chauhan;
- Version: 1.0.5;
-
-+ General css
-+ Space css
-+ Background & Block color
-+ Buttons
-+ Input Form
-+ Bullet
-+ Icon
-+ Navigation CSS
-
-+ HOME
-  - Home
-  - Home-1
-  - Home-2
-+ LOAN PRODUCT
-  - Loan Image Listing
-  - Loan Icon Listing
-  - Car Loan Single
-  - Personal Loan Single
-  - Home Loan Single
-  - Education Loan Single
-+ ABOUT US
-  - About us
-  - Team
-+ BLOG
-  - Blog Listing
-  - Blog Single
-  - Two Column Masonry
-  - Three Column Masonry
-+ FEATURES
-  - Compare Loan
-  - Faq page
-  - Testimonial
-  - 404 Error
-    - Gallery
-      - Filterable Gallery 2 column
-      - Filterable Gallery 3 column
-      - Masonry Gallery
-      - Zoom Gallery
-    - Shortcodes
-      - Tab
-      - Accordion
-      - Alert
-
-- CONTACT US
-
-*/
+.floating-menu {
+    z-index: 10000000000;
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .floating-menu-area {
+    border-radius: 50%;
+    -moz-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .floating-menu-home-button {
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    color: #fff;
+    border-radius: 50%;
+  }
+  
+  .floating-menu-close-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  
+    font-size: 30px;
+    background: #0b4263;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .floating-menu-additional-buttons {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: gold;
+    font-size: 30px;
+    margin: 5px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+  }
 
 
 /*-----------------------------------

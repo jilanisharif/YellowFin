@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from gliafinancial.com/login-banking.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 08:16:44 GMT -->
-  <!-- Added by HTTrack -->
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <!-- /Added by HTTrack -->
-
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Cortex Financial Demo</title>
+    <meta
+      name="keywords"
+      content="YellowFin Website Template,Loan Product, Personal Loan, "
+    />
+    <title>YellowFin</title>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -24,18 +23,22 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i"
       rel="stylesheet"
     />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+    <!-- owl Carousel Css -->
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.css" rel="stylesheet" />
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
     <script type="text/javascript">
+      var url = new URL(window.location.href);
+      var userId = url.searchParams.get("userId");
       window.ymConfig = {
         bot: "x1676621486485",
         host: "https://r4.cloud.yellow.ai",
-        payload: {},
+        payload: {
+          userId: userId,
+        },
       };
       (function () {
         var w = window,
@@ -461,18 +464,14 @@
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="widget-text mt40">
-              <!-- widget text -->
               <p>
                 The main goal is to provide access to financial products that
                 meet our customer's needs.
               </p>
             </div>
-            <!-- /.widget text -->
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="widget-text mt40">
-              <!-- widget text -->
-
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                   <p class="address-text">
@@ -480,11 +479,8 @@
                     Concar Dr, San Mateo, California
                   </p>
                 </div>
-                <!-- <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
-                        </button> -->
               </div>
             </div>
-            <!-- /.widget text -->
           </div>
         </div>
       </div>
@@ -501,13 +497,15 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/slider-carousel.js"></script>
     <script type="text/javascript" src="js/service-carousel.js"></script>
-    <!-- Back to top script -->
-    <script src="js/back-to-top.js" type="text/javascript"></script>
-    <!-- SaleMove, This is where the magic happens! -->
-    <script src="../api.salemove.com/salemove_integration.js"></script>
-    <!-- Show Hide Language -->
-    <script type="text/javascript" src="js/language-toggle.js"></script>
-    <!--Close the menu in mobile view when opening languages-->
-    <script type="text/javascript" src="js/mobile-menu.js"></script>
+
+    <!-- Floating Buttons -->
+    <script
+      src="https://kit.fontawesome.com/b7a058fb42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/floating-button-script.js"
+    ></script>
   </body>
 </html>

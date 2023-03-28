@@ -1,128 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Borrow - is the loan company, Business Website Template.">
-    <meta name="keywords" content="YellowFin Website Template,Loan Product, Personal Loan, ">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="YellowFin Website Template,Loan Product, Personal Loan, "
+    />
     <title>YellowFin</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/update-styles.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/update-styles.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fontello.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- owl Carousel Css -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.css" rel="stylesheet" />
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- Second CSS -->
-    <!-- Start Master CSS -->
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.minc9d1.css?v=1659620664" />
-    <link rel="stylesheet" type="text/css" href="css/mainef8f.css?v=1675434714" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/swiper-bundle.minc9d1.css?v=1659620664"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mainef8f.css?v=1675434714"
+    />
 
-    <script src="../js.poshdevelopment.com/widget/entry.js" id="__chat-entry__" deploymentid="b3895edd-9a86-401d-8b90-63350f7b6a40"></script>
-    <script src="../c.evidon.com/dg/dg.js" companyId="7877"></script>
-    <script type=”text/javascript” src=../cdn.timetrade.com/scripts/lightbox/latest/lightbox.js></script>
     <script type="text/javascript">
-        window.ymConfig = {
-            "bot": "x1676621486485",
-            "host": "https://r4.cloud.yellow.ai",
-            "payload": {}
-        };
-        (function() {
-            var w = window,
-                ic = w.YellowMessenger;
-            if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
-            else {
-                var d = document,
-                    i = function() {
-                        i.c(arguments)
-                    };
+      var url = new URL(window.location.href);
+      var userId = url.searchParams.get("userId");
+      window.ymConfig = {
+        bot: "x1676621486485",
+        host: "https://r4.cloud.yellow.ai",
+        payload: {
+          userId: userId,
+        },
+      };
+      (function () {
+        var w = window,
+          ic = w.YellowMessenger;
+        if ("function" === typeof ic)
+          ic("reattach_activator"), ic("update", ymConfig);
+        else {
+          var d = document,
+            i = function () {
+              i.c(arguments);
+            };
 
-                function l() {
-                    var e = d.createElement("script");
-                    e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
-                    var t = d.getElementsByTagName("script")[0];
-                    t.parentNode.insertBefore(e, t)
-                }
-                i.q = [], i.c = function(e) {
-                    i.q.push(e)
-                }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
-            }
-        })();
+          function l() {
+            var e = d.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js");
+            var t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t);
+          }
+          (i.q = []),
+            (i.c = function (e) {
+              i.q.push(e);
+            }),
+            (w.YellowMessenger = i),
+            w.attachEvent
+              ? w.attachEvent("onload", l)
+              : w.addEventListener("load", l, !1);
+        }
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- /.top-bar -->
     <div class="header-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 logo-login-button">
-                    <!-- logo -->
-                    <div class="logo">
-                        <img src="images/YellowFin.png" style="width: auto; height: 50px; margin-left: 20px;" alt="YellowFin - Insurance Company Website Template">
-                    </div>
-                    <div class="login-section"></div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 logo-login-button"
+          >
+            <!-- logo -->
+            <div class="logo">
+              <img
+                src="images/YellowFin.png"
+                style="width: auto; height: 50px; margin-left: 20px"
+                alt="YellowFin - Insurance Company Website Template"
+              />
             </div>
+            <div class="login-section"></div>
+          </div>
         </div>
-        <div class="navigation-2">
-            <div class="container" onclick="menuCloser()">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div id="navigation">
-                            <!-- navigation start-->
-                            <ul id="menu-options">
-                                <li class="active"><a href="index.html" title="Home" class="animsition-link">Home</a></li>
-                                <li onmouseover="menuHover('cuDrop')" onmouseout="menuHoverOut('cuDrop')" id="cuButton"><a href="banking-new.html" title="Banking" class="animsition-link">Banking</a>
-                                    <ul id="cuDrop">
-                                        <li><a href="banking-new.html" title="Banking Overview" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Banking Overview</a></li>
-                                        <li><a href="checking-accounts.html" title="Accounts" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Accounts</a></li>
-                                        <li><a href="credit-cards.html" title="Credit Cards" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Credit Cards</a></li>
-                                        <li><a href="credit-cards.html" title="Debit" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Debit</a></li>
+      </div>
+      <div class="navigation-2">
+        <div class="container" onclick="menuCloser()">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div id="navigation">
+                <!-- navigation start-->
+                <ul id="menu-options">
+                  <li class="active">
+                    <a href="index.html" title="Home" class="animsition-link"
+                      >Home</a
+                    >
+                  </li>
+                  <li
+                    onmouseover="menuHover('cuDrop')"
+                    onmouseout="menuHoverOut('cuDrop')"
+                    id="cuButton"
+                  >
+                    <a
+                      href="banking-new.html"
+                      title="Banking"
+                      class="animsition-link"
+                      >Banking</a
+                    >
+                    <ul id="cuDrop">
+                      <li>
+                        <a
+                          href="banking-new.html"
+                          title="Banking Overview"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Banking Overview</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="checking-accounts.html"
+                          title="Accounts"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Accounts</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="credit-cards.html"
+                          title="Credit Cards"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Credit Cards</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="credit-cards.html"
+                          title="Debit"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Debit</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    onmouseover="menuHover('bankingDrop')"
+                    onmouseout="menuHoverOut('bankingDrop')"
+                    id="bankingButton"
+                  >
+                    <a
+                      href="mortgages.html"
+                      title="Borrow"
+                      class="animsition-link"
+                      >Borrow</a
+                    >
+                    <ul id="bankingDrop">
+                      <li>
+                        <a
+                          href="mortgages.html"
+                          title="Mortgage"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Mortgages</a
+                        >
+                      </li>
 
-                                    </ul>
-                                </li>
-                                <li onmouseover="menuHover('bankingDrop')" onmouseout="menuHoverOut('bankingDrop')" id="bankingButton"><a href="mortgages.html" title="Borrow" class="animsition-link">Borrow</a>
-                                    <ul id="bankingDrop">
-                                        <li><a href="mortgages.html" title="Mortgage" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Mortgages</a></li>
-
-                                        <li><a href="auto-loans.html" title="Auto Loans" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Auto Loans</a></li>
-                                        <li><a href="debt-consolidation-loans.html" title="Debot Consolidation Loans" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Debt Consolidation Loans</a></li>
-                                        <li><a href="personal-loans.html" title="Personal Loans" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Personal Loans</a></li>
-                                        <li><a href="student-loans.html" title="Student Loans" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Student Loans</a></li>
-                                    </ul>
-                                </li>
-                                <li onmouseover="menuHover('investingDrop')" onmouseout="menuHoverOut('investingDrop')" id="bankingButton"><a href="education-planning.html" title="Investing" class="animsition-link">Investing</a>
-                                    <ul id="investingDrop">
-                                        <li><a href="education-planning.html" title="Education Planning" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Education Planning</a></li>
-                                        <li><a href="financial-planning.html" title="Financial Planning" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Financial Planning</a></li>
-                                        <li><a href="retirement-planning.html" title="Retirement Planning" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Retirement Planning</a></li>
-                                    </ul>
-                                </li>
-                                <li onmouseover="menuHover('insuranceDrop')" onmouseout="menuHoverOut('insuranceDrop')"><a href="insurance.html" title="Insurance" class="animsition-link">Insurance</a>
-                                    <ul id="insuranceDrop">
-                                        <li><a href="auto-insurance.html" title="Auto Insurance" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Auto Insurance</a></li>
-                                        <li><a href="homeowners-insurance.html" title="Homeowners nsurance" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Homeowners Insurance</a></li>
-                                        <li><a href="life-insurance.html" title="Life Insurance" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Life Insurance</a></li>
-                                        <li><a href="portal-index.html" title="Insurance Portal" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Insurance Portal</a></li>
-                                    </ul>
-                                </li>
-                                <li id="contact-us"><a href="beforetex.html" title="Contact us" class="animsition-link">Contact us</a></li>
-                            </ul>
-                            <!-- <ul id="language-list">
+                      <li>
+                        <a
+                          href="auto-loans.html"
+                          title="Auto Loans"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Auto Loans</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="debt-consolidation-loans.html"
+                          title="Debot Consolidation Loans"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Debt Consolidation Loans</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="personal-loans.html"
+                          title="Personal Loans"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Personal Loans</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="student-loans.html"
+                          title="Student Loans"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Student Loans</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    onmouseover="menuHover('investingDrop')"
+                    onmouseout="menuHoverOut('investingDrop')"
+                    id="bankingButton"
+                  >
+                    <a
+                      href="education-planning.html"
+                      title="Investing"
+                      class="animsition-link"
+                      >Investing</a
+                    >
+                    <ul id="investingDrop">
+                      <li>
+                        <a
+                          href="education-planning.html"
+                          title="Education Planning"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Education Planning</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="financial-planning.html"
+                          title="Financial Planning"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Financial Planning</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="retirement-planning.html"
+                          title="Retirement Planning"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Retirement Planning</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    onmouseover="menuHover('insuranceDrop')"
+                    onmouseout="menuHoverOut('insuranceDrop')"
+                  >
+                    <a
+                      href="insurance.html"
+                      title="Insurance"
+                      class="animsition-link"
+                      >Insurance</a
+                    >
+                    <ul id="insuranceDrop">
+                      <li>
+                        <a
+                          href="auto-insurance.html"
+                          title="Auto Insurance"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Auto Insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="homeowners-insurance.html"
+                          title="Homeowners nsurance"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Homeowners Insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="life-insurance.html"
+                          title="Life Insurance"
+                          class="animsition-link dropdownLink"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Life Insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="portal-index.html"
+                          title="Insurance Portal"
+                          class="animsition-link"
+                          onmouseover="optionHover(this)"
+                          onmouseout="optionHoverOut(this)"
+                          >Insurance Portal</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="contact-us">
+                    <a
+                      href="beforetex.html"
+                      title="Contact us"
+                      class="animsition-link"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+                <!-- <ul id="language-list">
                                 <li onmouseover="menuHover('languageDrop')" onmouseout="menuHoverOut('languageDrop')" class="language-selector"><a href="#" title="Language" class="animsition-link">Language</a>
                                     <ul id="languageDrop">
                                         <li>
@@ -132,329 +353,727 @@
                                     </ul>
                                 </li>
                             </ul> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <main class="main draggable-components-page" id="main-content">
-        <section class="section" id="breadcrumb-section" data-features="Breadcrumb">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                        <li class="breadcrumb-item">Borrow</li>
-                        <li class="breadcrumb-item">Auto Loans</li>
-                    </ol>
-                </nav>
+      <section
+        class="section"
+        id="breadcrumb-section"
+        data-features="Breadcrumb"
+      >
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item">Borrow</li>
+              <li class="breadcrumb-item">Auto Loans</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="section image-banner">
+        <img
+          src="./images/Auto-Loan-Hero.jpg"
+          alt="middle aged woman looking out a car window at the ocean"
+          class="image image-background show-desktop"
+        />
+        <img
+          src="./images/Auto-Loan-Hero-Mobile.jpg"
+          alt="middle aged woman looking out a car window at the ocean"
+          class="image image-background show-mobile"
+        />
+        <div class="container right">
+          <div class="card-container">
+            <div class="banner-cover">
+              <h4 class="heading heading-xs card-container__title bold">
+                Auto Loans
+              </h4>
+              <h2 class="heading heading-xl card-container__title bold">
+                Finance the Vehicle You Want
+              </h2>
             </div>
-        </section>
-        <section class="section image-banner"> <img src="./_Assets/images/Hero-header-images/Auto-Loan-Hero.jpg" alt="middle aged woman looking out a car window at the ocean" class="image image-background show-desktop"> <img src="./_Assets/images/Hero-header-images/Mobile/Auto-Loan-Hero-Mobile.jpg"
-                alt="middle aged woman looking out a car window at the ocean" class="image image-background show-mobile">
-            <div class="container right">
-                <div class="card-container ">
-                    <div class="banner-cover">
-                        <h4 class="heading heading-xs card-container__title bold ">Auto Loans</h4>
-                        <h2 class="heading heading-xl card-container__title bold ">Finance the Vehicle You Want</h2>
-                    </div>
-                    <p class="text  card-container__description">Get preapproved now and be ready to buy when you find the auto you want with rates as low as 4.89% APR<sup style="line-height:0.9;font-size:0.8rem;">1</sup>.</p> <a href="#" onclick="trackParcer(this)" data-modal-title="Already a Member at YellowFin?"
-                        data-modal-desc="Not a member? No worries, it is easy to join!" data-modal-yes="https://forms.fivision.com/YellowFinfcu/oa/default.aspx?Applicant=EM&amp;Product=AUTN" data-modal-no="https://forms.fivision.com/YellowFinfcu/oa/default.aspx?Applicant=NM&amp;Product=AUTN"
-                        data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Apply online" data-event-action="Auto Loans Finance the Vehicle You Want " data-modal="" class="btn btn-primary btn-medium btn-weight-medium already-member-trigger ">    Apply online</a>                    </div>
-            </div>
-        </section>
-        <section class="section product-info-section mt-24 pt-48 mt-m-48 mb-m-48" data-features="Product info">
-            <div class="container">
-                <div class="product-info">
-                    <h2 class="heading heading-l ">Our members deserve a better auto buying experience.</h2>
-                    <p class="text text-large ">At YellowFin, we make the auto loan process easy with competitive rates and a variety of loan terms to choose from. There are no application fees or prepayment penalties, and we'll even give you a 0.25% APR<sup style="line-height:0.9;">1</sup>                        rate discount for setting up automatic payments. We're a credit union—a not-for-profit financial cooperative that exists to serve our members. </p>
+            <p class="text card-container__description">
+              Get preapproved now and be ready to buy when you find the auto you
+              want with rates as low as 4.89% APR<sup
+                style="line-height: 0.9; font-size: 0.8rem"
+                >1</sup
+              >.
+            </p>
+            <a
+              href="#"
+              onclick="trackParcer(this)"
+              data-modal-title="Already a Member at YellowFin?"
+              data-modal=""
+              class="btn btn-primary btn-medium btn-weight-medium already-member-trigger"
+            >
+              Apply online</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section product-info-section mt-24 pt-48 mt-m-48 mb-m-48"
+        data-features="Product info"
+      >
+        <div class="container">
+          <div class="product-info">
+            <h2 class="heading heading-l">
+              Our members deserve a better auto buying experience.
+            </h2>
+            <p class="text text-large">
+              At YellowFin, we make the auto loan process easy with competitive
+              rates and a variety of loan terms to choose from. There are no
+              application fees or prepayment penalties, and we'll even give you
+              a 0.25% APR<sup style="line-height: 0.9">1</sup> rate discount for
+              setting up automatic payments. We're a credit union—a
+              not-for-profit financial cooperative that exists to serve our
+              members.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section product-detail-boxes mt-48 mt-m-32"
+        data-features="Product detail boxes"
+      >
+        <div class="product-boxes-cover">
+          <div class="container">
+            <div class="product-boxes">
+              <h3 class="heading heading-xs box-header">
+                THREE REASONS TO CHOOSE YellowFin FOR YOUR AUTO LOAN
+              </h3>
+              <div class="box-container">
+                <div class="box-item">
+                  <h4 class="heading heading-xs box-title">
+                    Free 45-day preapprovals let you shop with confidence
+                  </h4>
+                  <p class="text text-large box-desc">
+                    Preapproval lets you lock in your rate and loan amount. So
+                    you can take your time to find the perfect car, SUV, or
+                    truck from a dealer or private seller.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="section product-detail-boxes mt-48 mt-m-32" data-features="Product detail boxes">
-            <div class="product-boxes-cover">
-                <div class="container">
-                    <div class="product-boxes">
-                        <h3 class="heading heading-xs box-header">THREE REASONS TO CHOOSE YellowFin FOR YOUR AUTO LOAN</h3>
-                        <div class="box-container">
-                            <div class="box-item">
-                                <h4 class="heading heading-xs box-title">Free 45-day preapprovals let you shop with confidence</h4>
-                                <p class="text text-large box-desc">Preapproval lets you lock in your rate and loan amount. So you can take your time to find the perfect car, SUV, or truck from a dealer or private seller.</p>
-                            </div>
-                            <div class="box-item">
-                                <h4 class="heading heading-xs box-title">Competitive rates for up to 96 months<sup style="line-height:0.9;font-size:0.9rem;">1</sup> help lower payments</h4>
-                                <p class="text text-large box-desc">Low payments are the key to stretching your buying power. Our member-only rates and flexible terms help make the vehicle you really want more affordable.</p>
-                            </div>
-                            <div class="box-item">
-                                <h4 class="heading heading-xs box-title">Financing, even if you owe money on your current vehicle</h4>
-                                <p class="text text-large box-desc">Still owe money on your current car, truck or SUV after trade-in? We may be able to help.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="box-item">
+                  <h4 class="heading heading-xs box-title">
+                    Competitive rates for up to 96 months<sup
+                      style="line-height: 0.9; font-size: 0.9rem"
+                      >1</sup
+                    >
+                    help lower payments
+                  </h4>
+                  <p class="text text-large box-desc">
+                    Low payments are the key to stretching your buying power.
+                    Our member-only rates and flexible terms help make the
+                    vehicle you really want more affordable.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="section list-item-section mt-88 mb-24 pb-0 mt-m-48" data-features="List item">
-            <div class="list-container">
-                <div class="container dir-col">
-                    <div class="list-title">
-                        <h3 class="heading heading-xs ">HOW TO GET AN AUTO LOAN FROM YellowFin</h3>
-                    </div>
-                    <div class="list-cover">
-                        <div class="list-item">
-                            <div class="list-number"> 1 </div>
-                            <div class="list-details">
-                                <div class="list-header"> Join our credit union </div>
-                                <div class="list-desc"> Our finance rates and other banking resources are only for members. Joining is easy: click here to <a href="https://forms.fivision.com/YellowFinfcu/oa/default.aspx?_gl=1*1p85s58*_ga*MTY3ODU3MDQ1MS4xNjUwMTMxNDcy*_ga_HVWYHGZGC4*MTY1MDIwNzY3Ny4zLjEuMTY1MDIwODEyOS4zMA.."
-                                        target="_blank">apply online</a>. </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-number"> 2 </div>
-                            <div class="list-details">
-                                <div class="list-header"> Get your free preapproval </div>
-                                <div class="list-desc"> To lock in your rate for 45 days – or finance a vehicle you've already found – click here to <a href="https://forms.fivision.com/YellowFinfcu/oa/default.aspx" target="_blank">get preapproved</a>. </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="list-number"> 3 </div>
-                            <div class="list-details">
-                                <div class="list-header"> Protect your vehicle </div>
-                                <div class="list-desc"> We offer GAP insurance to help protect you from the unexpected. And, we can even help you get auto insurance. </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="box-item">
+                  <h4 class="heading heading-xs box-title">
+                    Financing, even if you owe money on your current vehicle
+                  </h4>
+                  <p class="text text-large box-desc">
+                    Still owe money on your current car, truck or SUV after
+                    trade-in? We may be able to help.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section content-card-section mt-48 mb-88 mt-m-0 mb-m-0" data-features="Content Card">
-            <div class="container no-rp-mobile no-lp-mobile">
-                <div class="content-card">
-                    <div class="content-article">
-                        <div class="content-left"> <img src="./_Assets/images/Content-Card-Images/Auto-Pages/enterprise-image-auto-shopping.png" alt="Enterprise Car Sales" class="image content-img"> </div>
-                        <div class="content-right">
-                            <h3 class="heading heading-m content-title">Enterprise Used Vehicles</h3>
-                            <div class="item-content">
-                                <p class="text text-medium ">Enterprise will make your first payment up to $400<sup style="line-height:0.9;">2</sup> and give you Kelly Blue Book® Trade-In Value<sup style="line-height:0.9;">3</sup> on your vehicle.</p>
-                            </div> <a href="https://www.enterprisecarsales.com/YellowFinfcu/?CUR=YellowFinfcu&amp;CU&amp;mcid=affiliate:34742972" onclick="trackParcer(this)" data-modal-title="Third-Party Site Disclaimer" data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
-                                data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Start Shopping" data-event-action="Enterprise Used Vehicles" data-modal="" class="btn btn-primary btn-medium btn-weight-medium external-link-trigger button">    Start Shopping</a>                            </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section list-item-section mt-88 mb-24 pb-0 mt-m-48"
+        data-features="List item"
+      >
+        <div class="list-container">
+          <div class="container dir-col">
+            <div class="list-title">
+              <h3 class="heading heading-xs">
+                HOW TO GET AN AUTO LOAN FROM YellowFin
+              </h3>
             </div>
-        </section>
-        <section class="section featured-products-section pt-24 pb-48" data-features="Featured Products">
-            <div class="container no-rp-tablet dir-col">
-                <div class="section-title">
-                    <div class="left-text">
-                        <h3 class="heading heading-xs ">YellowFin IS MORE THAN JUST AUTO LOANS</h3>
-                    </div>
-                    <div class="right-text">
-                    </div>
+            <div class="list-cover">
+              <div class="list-item">
+                <div class="list-number">1</div>
+                <div class="list-details">
+                  <div class="list-header">Join our credit union</div>
+                  <div class="list-desc">
+                    Our finance rates and other banking resources are only for
+                    members. Joining is easy: click here to
+                    <a
+                      href="https://forms.fivision.com/YellowFinfcu/oa/default.aspx?_gl=1*1p85s58*_ga*MTY3ODU3MDQ1MS4xNjUwMTMxNDcy*_ga_HVWYHGZGC4*MTY1MDIwNzY3Ny4zLjEuMTY1MDIwODEyOS4zMA.."
+                      target="_blank"
+                      >apply online</a
+                    >.
+                  </div>
                 </div>
-                <div class="slider-cover">
-                    <div class="featured-products">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide-icon">
-
-                                    <img src="./_Assets/images/Product-Icons/GAP-icon.png" alt="GAP Insurance Icon">
-
-                                </div>
-                                <div class="slide-content">
-                                    <h4 class="heading heading-xs slide-title">Guaranteed Asset Protection (GAP)</h4>
-                                    <p class="text text-medium ">Stay financially protected if your vehicle is ever stolen or totaled.</p>
-                                </div>
-                                <a href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home" onclick="trackParcer(this)" data-modal-title="Third-Party Site Disclaimer" data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
-                                    data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Guaranteed Asset Protection (GAP)" data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS" data-modal="" class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger ">
-                                    <div style="text-align:center;">Get a quote</div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="slide-icon">
-
-                                    <img src="./_Assets/images/Product-Icons/mechanical-icon.png" alt="Mechanical Breakdown Protection Icon">
-
-                                </div>
-                                <div class="slide-content">
-                                    <h4 class="heading heading-xs slide-title">Mechanical Breakdown Protection</h4>
-                                    <p class="text text-medium ">Added protection for covered mechanical or electrical failures.</p>
-                                </div>
-                                <a href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home" onclick="trackParcer(this)" data-modal-title="Third-Party Site Disclaimer" data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
-                                    data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Mechanical Breakdown Protection" data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS" data-modal="" class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger ">
-                                    <div style="text-align:center;">Get a quote</div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="slide-icon">
-
-                                    <img src="./_Assets/images/Product-Icons/debt-protection-icon.png" alt="Debt Protection Icon">
-
-                                </div>
-                                <div class="slide-content">
-                                    <h4 class="heading heading-xs slide-title">Debt Protection Coverage</h4>
-                                    <p class="text text-medium ">Ensure loan payments are made for an unexpected job loss, death or disability.</p>
-                                </div>
-                                <a href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home" onclick="trackParcer(this)" data-modal-title="Third-Party Site Disclaimer" data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
-                                    data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Debt Protection Coverage" data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS" data-modal="" class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger ">
-                                    <div style="text-align:center;">Get a quote</div>
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="slide-icon">
-
-                                    <img src="./_Assets/images/Product-Icons/auto-insurance-icon.png" alt="Auto Insurance Icon">
-
-                                </div>
-                                <div class="slide-content">
-                                    <h4 class="heading heading-xs slide-title">Auto Insurance Coverage</h4>
-                                    <p class="text text-medium ">Get the auto insurance coverage you need at an affordable price.</p>
-                                </div>
-                                <a href="https://imcovered.com/quotingapp/SiteViewerIP.aspx?ObjectType=Site&amp;ObjectId=33" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Auto Insurance Coverage" data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS"
-                                    data-modal="" class="btn btn-link-blue btn-medium btn-weight-medium  ">
-                                    <div style="text-align:center;">Get a quote</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fp swiper-pagination"></div>
-                    <div class="fp swiper-button-prev"> <svg xmlns="http://www.w3.org/2000/svg" width="12.547" height="20.346">        <path data-name="?Color" d="M2.387 0 0 2.391l7.755 7.782L0 17.955l2.387 2.391 10.16-10.173Z" fill="#fff">        </path>    </svg></div>
-                    <div class="fp swiper-button-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12.547" height="20.346">        <path data-name="?Color" d="M2.387 0 0 2.391l7.755 7.782L0 17.955l2.387 2.391 10.16-10.173Z" fill="#fff">        </path>    </svg></div>
+              </div>
+              <div class="list-item">
+                <div class="list-number">2</div>
+                <div class="list-details">
+                  <div class="list-header">Get your free preapproval</div>
+                  <div class="list-desc">
+                    To lock in your rate for 45 days – or finance a vehicle
+                    you've already found – click here to
+                    <a
+                      href="https://forms.fivision.com/YellowFinfcu/oa/default.aspx"
+                      target="_blank"
+                      >get preapproved</a
+                    >.
+                  </div>
                 </div>
+              </div>
+              <div class="list-item">
+                <div class="list-number">3</div>
+                <div class="list-details">
+                  <div class="list-header">Protect your vehicle</div>
+                  <div class="list-desc">
+                    We offer GAP insurance to help protect you from the
+                    unexpected. And, we can even help you get auto insurance.
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section content-card-section mt-64 mb-64 mt-m-0 mb-m-0" data-features="Content Card">
-            <div class="container no-rp-mobile no-lp-mobile">
-                <div class="content-card">
-                    <div class="content-article">
-                        <div class="content-left"> <img src="./_Assets/images/Content-Card-Images/Auto-Pages/costco-image-auto-shopping.png" alt="Costco Auto Program" class="image content-img"> </div>
-                        <div class="content-right">
-                            <h3 class="heading heading-m content-title">Costco® Auto Program</h3>
-                            <div class="item-content">
-                                <p class="text text-medium ">Shop pre-owned vehicles easily online from more than 3,000 hand-selected dealerships nationwide. Get a Costco membership or $50 Costco Shop Card<sup style="line-height:0.9;">4</sup> when you purchase your vehicle through
-                                    Costco.
-                                </p>
-                            </div> <a href="https://YellowFinfcu.costcoauto.com/" onclick="trackParcer(this)" data-modal-title="Third-Party Site Disclaimer" data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
-                                data-tracker-identifier="CONTENT" data-tracker-category="" data-event-title="Start Shopping" data-event-action="Costco® Auto Program" data-modal="" class="btn btn-primary btn-medium btn-weight-medium external-link-trigger button">    Start Shopping</a>                            </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section content-card-section mt-48 mb-88 mt-m-0 mb-m-0"
+        data-features="Content Card"
+      >
+        <div class="container no-rp-mobile no-lp-mobile">
+          <div class="content-card">
+            <div class="content-article">
+              <div class="content-left">
+                <img
+                  src="./images/enterprise-image-auto-shopping.png"
+                  alt="Enterprise Car Sales"
+                  class="image content-img"
+                />
+              </div>
+              <div class="content-right">
+                <h3 class="heading heading-m content-title">
+                  Enterprise Used Vehicles
+                </h3>
+                <div class="item-content">
+                  <p class="text text-medium">
+                    Enterprise will make your first payment up to $400<sup
+                      style="line-height: 0.9"
+                      >2</sup
+                    >
+                    and give you Kelly Blue Book® Trade-In Value<sup
+                      style="line-height: 0.9"
+                      >3</sup
+                    >
+                    on your vehicle.
+                  </p>
                 </div>
+                <a
+                  href="https://www.enterprisecarsales.com/YellowFinfcu/?CUR=YellowFinfcu&amp;CU&amp;mcid=affiliate:34742972"
+                  onclick="trackParcer(this)"
+                  data-modal-title="Third-Party Site Disclaimer"
+                  data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
+                  data-tracker-identifier="CONTENT"
+                  data-tracker-category=""
+                  data-event-title="Start Shopping"
+                  data-event-action="Enterprise Used Vehicles"
+                  data-modal=""
+                  class="btn btn-primary btn-medium btn-weight-medium external-link-trigger button"
+                >
+                  Start Shopping</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section featured-products-section pt-24 pb-48"
+        data-features="Featured Products"
+      >
+        <div class="container no-rp-tablet dir-col">
+          <div class="section-title">
+            <div class="left-text">
+              <h3 class="heading heading-xs">
+                YellowFin IS MORE THAN JUST AUTO LOANS
+              </h3>
+            </div>
+            <div class="right-text"></div>
+          </div>
+          <div class="slider-cover">
+            <div class="featured-products">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-icon">
+                    <img src="./images/GAP-icon.png" alt="GAP Insurance Icon" />
+                  </div>
+                  <div class="slide-content">
+                    <h4 class="heading heading-xs slide-title">
+                      Guaranteed Asset Protection (GAP)
+                    </h4>
+                    <p class="text text-medium">
+                      Stay financially protected if your vehicle is ever stolen
+                      or totaled.
+                    </p>
+                  </div>
+                  <a
+                    href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home"
+                    onclick="trackParcer(this)"
+                    data-modal-title="Third-Party Site Disclaimer"
+                    data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
+                    data-tracker-identifier="CONTENT"
+                    data-tracker-category=""
+                    data-event-title="Guaranteed Asset Protection (GAP)"
+                    data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS"
+                    data-modal=""
+                    class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger"
+                  >
+                    <div style="text-align: center">Get a quote</div>
+                  </a>
+                </div>
 
-        <section class="section faq-section" data-features="FAQ Section">
-            <div class="accordion-container faq">
-                <div class="container dir-col">
-                    <div class="accordion-title">
-                        <h2 class="heading heading-s title">Frequently asked questions about car loans</h2>
-                    </div>
-                    <div class="accordion-content">
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="What are the benefits of getting pre-approved?">
-                                <h6 class="heading heading-xs ">What are the benefits of getting pre-approved?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>Well, it’s <strong>FREE</strong>, for one. And getting pre-approved simplifies the process of financing a car and makes it easier to negotiate a better sales price. With pre-approval, you confidently walk into the dealership
-                                    knowing how much car you can afford, your interest rate and loan term.</p>
-                                <p>Plus, your pre-approval from YellowFin is valid for 45 days, so you have plenty of time to research vehicles, locate a dealer, and take advantage of no-haggle pricing through our Costco Auto Program.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="What is Guaranteed Asset Protection (GAP)?">
-                                <h6 class="heading heading-xs ">What is Guaranteed Asset Protection (GAP)?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>Guaranteed Asset Protection, or GAP, is low-cost coverage* that helps you pay off your auto loan by protecting you from the “gap” between your vehicle’s depreciated value and the amount you still owe if it is totaled or
-                                    stolen.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="What is Mechanical Breakdown Protection?">
-                                <h6 class="heading heading-xs ">What is Mechanical Breakdown Protection?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>Breakdowns happen, but breaking the bank doesn’t have to! With Mechanical Breakdown Protection from YellowFin, you get added protection from unexpected expenses resulting from covered mechanical or electrical failures.</p>
-                                <p>Added benefits include 24/7 towing and emergency roadside assistance, as well as rental reimbursement. Keep your new or used car covered against breakdowns long after the manufacturer’s warranty expires.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="What is Debt Protection?">
-                                <h6 class="heading heading-xs ">What is Debt Protection?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>It’s like a safety net for you and your family! An unexpected job loss, death or disability can lead to a heavy financial burden. Safeguard your loved ones against these types of events and ensure loan payments are made
-                                    on time.</p>
-                                <p>Under YellowFin’s Debt Protection program, your entire loan balance may be canceled or your monthly loan payments may be canceled without penalty or added interest. You benefit from peace of mind knowing you and your credit
-                                    rating are protected.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="What auto insurance coverage do you offer?">
-                                <h6 class="heading heading-xs ">What auto insurance coverage do you offer?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>See how much you can save! YellowFin offers auto insurance through our affiliate, Members Alliance Insurance, so we can help you shop around and compare prices from many of the leading insurance companies to ensure you
-                                    get the coverage you need at a great price.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <header class="accordion-header" onclick="trackParcer(this)" data-tracker-identifier="CONTENT" data-event-action="FAQ" data-event-title="Do you offer RV and motorcycle loans?">
-                                <h6 class="heading heading-xs ">Do you offer RV and motorcycle loans?</h6>
-                                <div class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11">            <path data-name="?Color" d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"></path>         </svg> </div>
-                            </header>
-                            <div class="item-content">
-                                <p>Yes, We Do! YellowFin offers loans for RVs and motorcycles. You can even get exclusive prearranged member pricing on RVs through our Costco Auto Program.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-faq"> </div>
+                <div class="swiper-slide">
+                  <div class="slide-icon">
+                    <img
+                      src="./images/mechanical-icon.png"
+                      alt="Mechanical Breakdown Protection Icon"
+                    />
+                  </div>
+                  <div class="slide-content">
+                    <h4 class="heading heading-xs slide-title">
+                      Mechanical Breakdown Protection
+                    </h4>
+                    <p class="text text-medium">
+                      Added protection for covered mechanical or electrical
+                      failures.
+                    </p>
+                  </div>
+                  <a
+                    href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home"
+                    onclick="trackParcer(this)"
+                    data-modal-title="Third-Party Site Disclaimer"
+                    data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
+                    data-tracker-identifier="CONTENT"
+                    data-tracker-category=""
+                    data-event-title="Mechanical Breakdown Protection"
+                    data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS"
+                    data-modal=""
+                    class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger"
+                  >
+                    <div style="text-align: center">Get a quote</div>
+                  </a>
                 </div>
+
+                <div class="swiper-slide">
+                  <div class="slide-icon">
+                    <img
+                      src="./images/debt-protection-icon.png"
+                      alt="Debt Protection Icon"
+                    />
+                  </div>
+                  <div class="slide-content">
+                    <h4 class="heading heading-xs slide-title">
+                      Debt Protection Coverage
+                    </h4>
+                    <p class="text text-medium">
+                      Ensure loan payments are made for an unexpected job loss,
+                      death or disability.
+                    </p>
+                  </div>
+                  <a
+                    href="https://YellowFinfcu.iqq.alliedsolutions.net/iQQ/ConsumerWebsite/Home"
+                    onclick="trackParcer(this)"
+                    data-modal-title="Third-Party Site Disclaimer"
+                    data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
+                    data-tracker-identifier="CONTENT"
+                    data-tracker-category=""
+                    data-event-title="Debt Protection Coverage"
+                    data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS"
+                    data-modal=""
+                    class="btn btn-link-blue btn-medium btn-weight-medium external-link-trigger"
+                  >
+                    <div style="text-align: center">Get a quote</div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide-icon">
+                    <img
+                      src="./images/auto-insurance-icon.png"
+                      alt="Auto Insurance Icon"
+                    />
+                  </div>
+                  <div class="slide-content">
+                    <h4 class="heading heading-xs slide-title">
+                      Auto Insurance Coverage
+                    </h4>
+                    <p class="text text-medium">
+                      Get the auto insurance coverage you need at an affordable
+                      price.
+                    </p>
+                  </div>
+                  <a
+                    href="https://imcovered.com/quotingapp/SiteViewerIP.aspx?ObjectType=Site&amp;ObjectId=33"
+                    onclick="trackParcer(this)"
+                    data-tracker-identifier="CONTENT"
+                    data-tracker-category=""
+                    data-event-title="Auto Insurance Coverage"
+                    data-event-action="YellowFin IS MORE THAN JUST AUTO LOANS"
+                    data-modal=""
+                    class="btn btn-link-blue btn-medium btn-weight-medium"
+                  >
+                    <div style="text-align: center">Get a quote</div>
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="fp swiper-pagination"></div>
+            <div class="fp swiper-button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12.547"
+                height="20.346"
+              >
+                <path
+                  data-name="?Color"
+                  d="M2.387 0 0 2.391l7.755 7.782L0 17.955l2.387 2.391 10.16-10.173Z"
+                  fill="#fff"
+                ></path>
+              </svg>
+            </div>
+            <div class="fp swiper-button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12.547"
+                height="20.346"
+              >
+                <path
+                  data-name="?Color"
+                  d="M2.387 0 0 2.391l7.755 7.782L0 17.955l2.387 2.391 10.16-10.173Z"
+                  fill="#fff"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section content-card-section mt-64 mb-64 mt-m-0 mb-m-0"
+        data-features="Content Card"
+      >
+        <div class="container no-rp-mobile no-lp-mobile">
+          <div class="content-card">
+            <div class="content-article">
+              <div class="content-left">
+                <img
+                  src="./images/costco-image-auto-shopping.png"
+                  alt="Costco Auto Program"
+                  class="image content-img"
+                />
+              </div>
+              <div class="content-right">
+                <h3 class="heading heading-m content-title">
+                  Costco® Auto Program
+                </h3>
+                <div class="item-content">
+                  <p class="text text-medium">
+                    Shop pre-owned vehicles easily online from more than 3,000
+                    hand-selected dealerships nationwide. Get a Costco
+                    membership or $50 Costco Shop Card<sup
+                      style="line-height: 0.9"
+                      >4</sup
+                    >
+                    when you purchase your vehicle through Costco.
+                  </p>
+                </div>
+                <a
+                  href="https://YellowFinfcu.costcoauto.com/"
+                  onclick="trackParcer(this)"
+                  data-modal-title="Third-Party Site Disclaimer"
+                  data-modal-desc="By accessing the noted link you will be leaving YellowFin's website and entering a website hosted by another party. Please be advised that you will no longer be subject to, or under the protection of, the privacy and security policies of YellowFin's website. We encourage you to read and evaluate the privacy and security policies of the site you are entering, which may be different than those of YellowFin."
+                  data-tracker-identifier="CONTENT"
+                  data-tracker-category=""
+                  data-event-title="Start Shopping"
+                  data-event-action="Costco® Auto Program"
+                  data-modal=""
+                  class="btn btn-primary btn-medium btn-weight-medium external-link-trigger button"
+                >
+                  Start Shopping</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" data-features="FAQ Section">
+        <div class="accordion-container faq">
+          <div class="container dir-col">
+            <div class="accordion-title">
+              <h2 class="heading heading-s title">
+                Frequently asked questions about car loans
+              </h2>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="What are the benefits of getting pre-approved?"
+                >
+                  <h6 class="heading heading-xs">
+                    What are the benefits of getting pre-approved?
+                  </h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    Well, it’s <strong>FREE</strong>, for one. And getting
+                    pre-approved simplifies the process of financing a car and
+                    makes it easier to negotiate a better sales price. With
+                    pre-approval, you confidently walk into the dealership
+                    knowing how much car you can afford, your interest rate and
+                    loan term.
+                  </p>
+                  <p>
+                    Plus, your pre-approval from YellowFin is valid for 45 days,
+                    so you have plenty of time to research vehicles, locate a
+                    dealer, and take advantage of no-haggle pricing through our
+                    Costco Auto Program.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="What is Guaranteed Asset Protection (GAP)?"
+                >
+                  <h6 class="heading heading-xs">
+                    What is Guaranteed Asset Protection (GAP)?
+                  </h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    Guaranteed Asset Protection, or GAP, is low-cost coverage*
+                    that helps you pay off your auto loan by protecting you from
+                    the “gap” between your vehicle’s depreciated value and the
+                    amount you still owe if it is totaled or stolen.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="What is Mechanical Breakdown Protection?"
+                >
+                  <h6 class="heading heading-xs">
+                    What is Mechanical Breakdown Protection?
+                  </h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    Breakdowns happen, but breaking the bank doesn’t have to!
+                    With Mechanical Breakdown Protection from YellowFin, you get
+                    added protection from unexpected expenses resulting from
+                    covered mechanical or electrical failures.
+                  </p>
+                  <p>
+                    Added benefits include 24/7 towing and emergency roadside
+                    assistance, as well as rental reimbursement. Keep your new
+                    or used car covered against breakdowns long after the
+                    manufacturer’s warranty expires.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="What is Debt Protection?"
+                >
+                  <h6 class="heading heading-xs">What is Debt Protection?</h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    It’s like a safety net for you and your family! An
+                    unexpected job loss, death or disability can lead to a heavy
+                    financial burden. Safeguard your loved ones against these
+                    types of events and ensure loan payments are made on time.
+                  </p>
+                  <p>
+                    Under YellowFin’s Debt Protection program, your entire loan
+                    balance may be canceled or your monthly loan payments may be
+                    canceled without penalty or added interest. You benefit from
+                    peace of mind knowing you and your credit rating are
+                    protected.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="What auto insurance coverage do you offer?"
+                >
+                  <h6 class="heading heading-xs">
+                    What auto insurance coverage do you offer?
+                  </h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    See how much you can save! YellowFin offers auto insurance
+                    through our affiliate, Members Alliance Insurance, so we can
+                    help you shop around and compare prices from many of the
+                    leading insurance companies to ensure you get the coverage
+                    you need at a great price.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <header
+                  class="accordion-header"
+                  onclick="trackParcer(this)"
+                  data-tracker-identifier="CONTENT"
+                  data-event-action="FAQ"
+                  data-event-title="Do you offer RV and motorcycle loans?"
+                >
+                  <h6 class="heading heading-xs">
+                    Do you offer RV and motorcycle loans?
+                  </h6>
+                  <div class="accordion-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="11"
+                    >
+                      <path
+                        data-name="?Color"
+                        d="M10.59 0 6 4.574 1.41 0 0 1.408 6 7.4l6-5.992Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </header>
+                <div class="item-content">
+                  <p>
+                    Yes, We Do! YellowFin offers loans for RVs and motorcycles.
+                    You can even get exclusive prearranged member pricing on RVs
+                    through our Costco Auto Program.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="all-faq"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="footer section-space100">
-        <!-- footer -->
-        <div class="container">
-            <hr class="dark-line">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="widget-text mt40">
-                        <!-- widget text -->
-                        <p>The main goal is to provide access to financial products that meet our customer's needs.</p>
-
-                    </div>
-                    <!-- /.widget text -->
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="widget-text mt40">
-                        <!-- widget text -->
-
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                                <p class="address-text"><span><i class="icon-placeholder-3 icon-1x"></i> </span>3400 Concar Dr, San Mateo, California </p>
-                            </div>
-                            <!-- <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
-                            </button> -->
-                        </div>
-                    </div>
-                    <!-- /.widget text -->
-                </div>
+      <!-- footer -->
+      <div class="container">
+        <hr class="dark-line" />
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="widget-text mt40">
+              <p>
+                The main goal is to provide access to financial products that
+                meet our customer's needs.
+              </p>
             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="widget-text mt40">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                  <p class="address-text">
+                    <span><i class="icon-placeholder-3 icon-1x"></i> </span>3400
+                    Concar Dr, San Mateo, California
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/menumaker.js"></script>
 
@@ -465,14 +1084,15 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/slider-carousel.js"></script>
     <script type="text/javascript" src="js/service-carousel.js"></script>
-    <!-- Back to top script -->
-    <script src="js/back-to-top.js" type="text/javascript"></script>
-    <!-- SaleMove, This is where the magic happens! -->
-    <script src="../api.salemove.com/salemove_integration.js"></script>
-    <!-- Show Hide Language -->
-    <script type="text/javascript" src="js/language-toggle.js"></script>
-    <!--Close the menu in mobile view when opening languages-->
-    <script type="text/javascript" src="js/mobile-menu.js"></script>
-</body>
 
+    <!-- Floating Buttons -->
+    <script
+      src="https://kit.fontawesome.com/b7a058fb42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./js/floating-button-script.js"
+    ></script>
+  </body>
 </html>
